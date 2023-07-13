@@ -1,0 +1,13 @@
+.history
+.vscode
+.idea
+.jest/
+.DS_Store
+
+test-results
+test-reports
+node_modules
+target
+*.iml
+node_modules
+dist
