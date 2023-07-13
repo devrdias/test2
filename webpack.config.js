@@ -25,6 +25,9 @@ const typescriptLoaderConfiguration = {
   include: path.resolve(appDirectory, 'src'),
   use: {
     loader: 'ts-loader',
+    options: {
+      transpileOnly: true,
+    },
   },
 };
 
@@ -57,7 +60,7 @@ module.exports = (env, argv) => {
         'react-native$': 'react-native-web',
         '/dist': path.resolve(appDirectory, 'dist'),
       },
-      extensions: ['.web.js', '.js', '.jsx', '.ts', '.tsx', '.json'],
+      extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     },
     optimization: {
       minimize: !isDevelopment,

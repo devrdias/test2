@@ -1,7 +1,7 @@
 {
   "extends": "@tsconfig/react-native/tsconfig.json",
   "compilerOptions": {
-    "outDir": "/dist",
+    "outDir": "dist",
     "baseUrl": ".",
     "declaration": true,
     "preserveSymlinks": false,
@@ -13,6 +13,6 @@
     "resolveJsonModule": true,
     "allowJs": false
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "@types"],
+  "include": ["src/*", "@types/*"],
   "typeRoots": ["node_modules/@types", "@types"]
 }
